@@ -1,3 +1,4 @@
+@echo off
 REM This script is based on virtualenv and virtualenvwrapper-win.
 REM As there is no mkproject for virutalenvwrapper-win, I made this one to provide the similar function.
 REM How to use: (Put this BAT file to the same folder as workon.bat, for example: c:\Python\Scripts)
@@ -7,7 +8,6 @@ REM 2. make a virtual environment named tank
 REM 3. Associcate the project directory c:\tank with tank virtual environment.
 REM 4. Workon tank
 
-@echo off
 set projectdir=%cd%\%1
 md %projectdir%
 call mkvirtualenv.bat %1
